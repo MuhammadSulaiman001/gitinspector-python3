@@ -1,5 +1,14 @@
 [![Latest release](https://img.shields.io/github/release/ejwa/gitinspector.svg?style=flat-square)](https://github.com/ejwa/gitinspector/releases/latest)
 [![License](https://img.shields.io/github/license/ejwa/gitinspector.svg?style=flat-square)](https://github.com/ejwa/gitinspector/blob/master/LICENSE.txt)
+
+# How-to (python 3)
+
+```
+python gitinspector.py --help
+python gitinspector.py --timeline --format=html --metrics=true --file-types=js,ts,md --list-file-types=true --since=1704070800 "absolute/path/to/repo"  > report.html ## --since can be calculated using [online generator](https://timestampgenerator.com/)
+```
+
+
 <h2>
  <img align="left" height="65px"
       src="https://raw.githubusercontent.com/ejwa/gitinspector/master/gitinspector/html/gitinspector_piclet.png"/>
