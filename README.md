@@ -5,12 +5,16 @@
 
 ```
 python gitinspector.py --help
-python gitinspector.py --timeline --format=html --metrics=true --file-types=js,ts,md --list-file-types=true --since=1704070800 "absolute/path/to/repo"  > git-inspector-report.html
+python gitinspector.py --timeline --format=html --metrics=true --file-types=dart,md --list-file-types=true --since=1704070800 "absolute/path/to/repo"  > git-inspector-report.html
 # or, from repo root directory
 python "path/to/gitinspector.py" --timeline --format=html --metrics=true --file-types=js,ts,md,mk,sh,sql,yml,env,dockerfile --list-file-types=true . > git-inspector-report.html
-# note: --since & --until values can be calculated using this online generator (https://timestampgenerator.com/)
 ```
 
+## Notes: 
+1. `--since` & `--until` values can be calculated using [this online generator](https://timestampgenerator.com/)
+2. pay attention to the file extensions reported at the bottom of the report, you might need to regenerate the report to include some of the new file extensions
+
+---
 
 <h2>
  <img align="left" height="65px"
