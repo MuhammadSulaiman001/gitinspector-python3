@@ -5,7 +5,10 @@
 
 ```
 python gitinspector.py --help
-python gitinspector.py --timeline --format=html --metrics=true --file-types=js,ts,md --list-file-types=true --since=1704070800 "absolute/path/to/repo"  > report.html ## --since can be calculated using [online generator](https://timestampgenerator.com/)
+python gitinspector.py --timeline --format=html --metrics=true --file-types=js,ts,md --list-file-types=true --since=1704070800 "absolute/path/to/repo"  > git-inspector-report.html
+# or, from repo root directory
+python "path/to/gitinspector.py" --timeline --format=html --metrics=true --file-types=js,ts,md,mk,sh,sql,yml,env,dockerfile --list-file-types=true . > git-inspector-report.html
+# note: --since & --until values can be calculated using this online generator (https://timestampgenerator.com/)
 ```
 
 
