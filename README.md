@@ -5,9 +5,9 @@
 
 ```
 python gitinspector.py --help
-python gitinspector.py --timeline --format=html --metrics=true --file-types=dart,md --list-file-types=true --since=1704070800 "absolute/path/to/repo"  > git-inspector-report.html
+python gitinspector.py --timeline --format=html --metrics --file-types=dart,md --list-file-types --since=1704070800 "absolute/path/to/repo"  > git-inspector-report.html
 # or, from repo root directory
-python "path/to/gitinspector.py" --timeline --format=html --metrics=true --file-types=js,ts,md,mk,sh,sql,yml,env,dockerfile --list-file-types=true . > git-inspector-report.html
+python "path/to/gitinspector.py" --timeline --format=html --metrics --file-types=js,ts,md,mk,sh,sql,yml,env,dockerfile --list-file-types . > git-inspector-report.html
 ```
 
 ## Notes: 
